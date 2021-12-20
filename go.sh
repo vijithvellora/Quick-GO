@@ -10,5 +10,7 @@ export GOROOT=/usr/local/go &&
 cd $HOME && mkdir go &&
 export GOPATH=$HOME/go &&
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH &&
+echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.profile &&
+source ~/.profile &&
 go version 
 go env
